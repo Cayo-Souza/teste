@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Xhopii</title>
+</head>
+<body>
+    
+    <header>
+        <img src="img/logo.png">
+        <h1>Xhopii</h1>
+    </header>
+
+    <div class="produto-imagem">
+        <div class="produto-miniatura">
+            <img src="produto1.jpg" onclick="selecionarImgProduto(this)">
+            <img src="produto2.jpg" onclick="selecionarImgProduto(this)">
+            <img src="produto3.jpg" onclick="selecionarImgProduto(this)">
+            <img src="produto4.jpg" onclick="selecionarImgProduto(this)">
+            <img src="produto5.jpg" onclick="selecionarImgProduto(this)">
+        </div>
+        <div class="produto-principal">
+            <img id="imgPrincipal" src="produto1.jpg">
+        </div>
+    </div>
+
+    <div class="produto-detalhes">
+        <h1>Camisa Da Seleção Brasileira 2002</h1>
+        <h2 id="precoProduto">R$376,88</h2>
+        <p id="quantProduto">171 peças disponiveis</p>
+        <p>Modelos:</p>
+        <button class="botao" id="botaoAmarela" onclick="mudarPreco(this)">Amarela</button>
+        <button class="botao" id="botaoAzul" onclick="mudarPreco(this)">Azul</button>
+        <button class="botao" id="botaoNomeNumero" onclick="mudarPreco(this)">Amarela com nome e número</button>
+        <p>Tamanhos:</p>
+        <button class="botao" id="botaoP" onclick="mudarTamanho(this)">P</button>
+        <button class="botao" id="botaoM" onclick="mudarTamanho(this)">M</button>
+        <button class="botao" id="botaoG" onclick="mudarTamanho(this)">G</button>
+        <p id="tamanhoProduto">Tamanho Selecionado: P</p>
+        <br>
+        <button id="botaoComprar">Comprar Agora</button>
+        
+    </div>
+</body>
+</html>
